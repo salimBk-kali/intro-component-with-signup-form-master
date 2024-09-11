@@ -1,0 +1,103 @@
+body{
+    font-family: "Poppins";
+    font-size: 16px;
+}
+:root{
+--Red: hsl(0, 100%, 74%) ;
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Dark_Blue: hsl(249, 10%, 26%); 
+--Grayish_Blue: hsl(246, 25%, 77%);
+}
+.page{
+    display: flex;
+    background-color: var(--Red);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url("../images/bg-intro-desktop.png") ;
+}
+.page div{
+    width: 85%;
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leftSide h2{
+    color: white;
+}
+.leftSide p{
+    font-size: 9px;
+    color: whitesmoke;
+}
+.rightSide header{
+    font-size: 10px;
+    background-color: var(--Blue);
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+.rightSide header span{
+    color: var(--Grayish_Blue);
+}
+.rightSide section{
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.rightSide section{
+    text-align: center;
+    padding: 10px;
+    
+}
+form input{
+    width: 80%;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 5px;
+}
+form p {
+    color: red;
+    font-size: 10px;
+    position: relative;
+    left: 50px;
+}
+form .send{
+    background-color: var(--Green);
+    width: 85%;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    font-size: 6.5px;
+    margin-top: 5px;
+}
+footer span{
+    color: var(--Red);
+}
+@media (max-width: 375px){
+    .page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftSide p {
+        font-size: 12.8px;
+        text-align: center;
+    }
+    .leftSide h2{
+        text-align: center;
+    }
+}
